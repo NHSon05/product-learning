@@ -1,0 +1,56 @@
+/* CKEditor.css */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --ck-content-font-family: Lato;
+    --ck-sidebar-width: 270px;
+}
+
+.main-container {
+    font-family: var(--ck-content-font-family);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.presence { margin-bottom: 8px; }
+
+.editor-container__editor-wrapper {
+    display: flex;
+    width: fit-content;
+}
+
+.editor-container_classic-editor .editor-container__editor {
+    min-width: 795px;
+    max-width: 795px;
+}
+
+.editor-container__sidebar {
+    min-width: var(--ck-sidebar-width);
+    max-width: var(--ck-sidebar-width);
+    margin-top: 28px;
+    margin-left: 10px;
+}
+
+.editor_container__word-count {
+    border: 1px solid #ccf;
+    border-radius: 4px;
+    margin-top: -1px;
+}
+
+.revision-history {
+    display: none; /* Sẽ được điều khiển bởi CKEditor plugin */
+}
+
+.revision-history__wrapper {
+    display: flex;
+}
+
+.revision-history__editor {
+    width: 795px;
+}
+
+.revision-history__sidebar {
+    width: var(--ck-sidebar-width);
+    min-height: 100%;
+}
