@@ -39,7 +39,7 @@ export default function EditorUI({ selectedForm, onBack, onSave, loading }) {
       </div>
 
       <Editor
-        apiKey="g7698wge1gl86j024v4q43z679ywanepr3odcn8nc1pnnknn" // Thay bằng key của bạn
+        apiKey="g7698wge1gl86j024v4q43z679ywanepr3odcn8nc1pnnknn"
         onInit={(evt, editor) => editorRef.current = editor}
         initialValue={selectedForm.content}
         init={{
